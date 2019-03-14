@@ -56,10 +56,10 @@ $('.next').on('click', function() {
 		$('.score').hide();
 		$('.result').hide();
 		$('.questionBox').addClass('flex')
-		if (score < 4) {
+		if (score <= 4) {
 			$('.questionTitle').text(`Just a little mischievious`);
 			$('.question').text(`Your score: ${score}`);
-		} else if (5 < score && score < 7) {
+		} else if (score >= 5 && score <= 7) {
 			$('.questionTitle').text(`Your inner monster is showing`);
 			$('.question').text(`Your score: ${score}`);
 		} else {
