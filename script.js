@@ -59,11 +59,11 @@ $('.next').on('click', function() {
 		if (score < 4) {
 			$('.questionTitle').text(`Just a little mischievious`);
 			$('.question').text(`Your score: ${score}`);
-		} else if (5 < score < 7) {
+		} else if (5 < score && score < 7) {
 			$('.questionTitle').text(`Your inner monster is showing`);
 			$('.question').text(`Your score: ${score}`);
 		} else {
-			$('.questionTitle').text(`You're an evil genius!'`);
+			$('.questionTitle').text(`You're an evil genius!`);
 			$('.question').text(`Your score: ${score}`);
 		}
 	} else {
